@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2025.03.24 a las 08:21:03 PM COT 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://pokemon.com/soap">
+    <schemaBindings map="false">
+      <package name="com.pokemon.soap.generated"/>
+    </schemaBindings>
+    <bindings scd="tns:getPokemonListRequest">
+      <class ref="com.pokemon.soap.generated.GetPokemonListRequest"/>
+    </bindings>
+    <bindings scd="tns:getPokemonListResponse">
+      <class ref="com.pokemon.soap.generated.GetPokemonListResponse"/>
+    </bindings>
+    <bindings scd="~tns:pokemonEntry">
+      <class ref="com.pokemon.soap.generated.PokemonEntry"/>
+    </bindings>
+    <bindings scd="tns:getPokemonDetailsRequest">
+      <class ref="com.pokemon.soap.generated.GetPokemonDetailsRequest"/>
+    </bindings>
+    <bindings scd="tns:getPokemonDetailsResponse">
+      <class ref="com.pokemon.soap.generated.GetPokemonDetailsResponse"/>
+    </bindings>
+    <bindings scd="~tns:typeWrapper">
+      <class ref="com.pokemon.soap.generated.TypeWrapper"/>
+    </bindings>
+    <bindings scd="~tns:abilityWrapper">
+      <class ref="com.pokemon.soap.generated.AbilityWrapper"/>
+    </bindings>
+    <bindings scd="~tns:sprites">
+      <class ref="com.pokemon.soap.generated.Sprites"/>
+    </bindings>
+    <bindings scd="~tns:type">
+      <class ref="com.pokemon.soap.generated.Type"/>
+    </bindings>
+    <bindings scd="~tns:ability">
+      <class ref="com.pokemon.soap.generated.Ability"/>
+    </bindings>
+  </bindings>
+</bindings>
+

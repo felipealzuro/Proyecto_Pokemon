@@ -3,6 +3,7 @@ package com.pokemon.dao;
 import com.pokemon.model.Pokemon;
 import com.pokemon.model.PokemonList;
 import org.springframework.stereotype.Repository;
+import org.springframework.web.client.RestTemplate;
 
 @Repository
 public class PokemonRepositoryImpl implements PokemonRepository {
@@ -28,7 +29,7 @@ public class PokemonRepositoryImpl implements PokemonRepository {
     @Override
     public PokemonList getPokemonList(int offset, int limit) {
         String url = BASE_URL + "?offset=" + offset + "&limit=" + limit;
-        return ((Object) restTemplate).getForObject(url, PokemonList.class);
+        return ((RestTemplate) restTemplate).getForObject(url, PokemonList.class);
     }
     
     @Override
