@@ -127,5 +127,3 @@ Has creado un servicio web SOAP que actúa como una capa de integración sobre l
 El servicio puede probarse utilizando:
 
 - Postman: Para enviar solicitudes SOAP manualmente
-- SoapUI: Para pruebas más avanzadas
-- Curl: Para pruebas desde línea de comandos
