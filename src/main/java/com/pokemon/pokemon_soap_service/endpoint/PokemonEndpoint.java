@@ -1,6 +1,5 @@
 package com.pokemon.pokemon_soap_service.endpoint;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
@@ -18,7 +17,6 @@ public class PokemonEndpoint {
 
     private final PokemonRepository pokemonRepository;
 
-    @Autowired
     public PokemonEndpoint(PokemonRepository pokemonRepository) {
         this.pokemonRepository = pokemonRepository;
     }

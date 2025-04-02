@@ -1,6 +1,9 @@
 package com.pokemon.model;
 
+import java.util.ArrayList;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Pokemon {
@@ -12,8 +15,8 @@ public class Pokemon {
     @JsonProperty("base_experience")
     private int baseExperience;
     
-    private List<TypeWrapper> types;
-    private List<AbilityWrapper> abilities;
+    private List<TypeWrapper> types = new ArrayList<>();
+    private List<AbilityWrapper> abilities = new ArrayList<>();
     private Sprites sprites;
     
     // Getters y setters
@@ -98,15 +101,9 @@ public class Pokemon {
             return type;
         }
         
-       public void setType(Type soapType) {
-    this.type = soapType;
-}
-
-
-
-    this.type = soapType;
-}
-
+        public void setType(Type soapType) {
+            this.type = soapType;
+        }
     }
     
     @JsonIgnoreProperties(ignoreUnknown = true)
@@ -163,7 +160,7 @@ public class Pokemon {
     }
     
     @JsonIgnoreProperties(ignoreUnknown = true)
-    public class Ability {
+    public static class Ability {
         private String name;
         private String url;
         
@@ -185,7 +182,7 @@ public class Pokemon {
     }
     
     @JsonIgnoreProperties(ignoreUnknown = true)
-    public class Sprites {
+    public static class Sprites {
         @JsonProperty("front_default")
         private String frontDefault;
         

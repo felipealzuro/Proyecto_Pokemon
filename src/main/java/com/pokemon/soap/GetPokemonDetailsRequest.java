@@ -1,10 +1,13 @@
 package com.pokemon.soap;
 
 public class GetPokemonDetailsRequest {
-
+    private String nameOrId;
+    
     public String getNameOrId() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getNameOrId'");
+        return nameOrId;
     }
-
+    
+    public void setNameOrId(String nameOrId) {
+        this.nameOrId = nameOrId;
+    }
 }

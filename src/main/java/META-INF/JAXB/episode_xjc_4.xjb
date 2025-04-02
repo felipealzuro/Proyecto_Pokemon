@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<bindings version="3.0" xmlns="https://jakarta.ee/xml/ns/jaxb">
+  <!--
+
+Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
+Visite https://eclipse-ee4j.github.io/jaxb-ri 
+Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
+Generado el: 2025.04.02 a las 11:04:51 AM GMT-05:00 
+
+  -->
+  <bindings scd="x-schema::tns" xmlns:tns="http://pokemon.com/soap/generated">
+    <schemaBindings map="false">
+      <package name="com.pokemon.soap.generated"/>
+    </schemaBindings>
+    <bindings scd="tns:getPokemonRequest">
+      <class ref="com.pokemon.soap.generated.GetPokemonRequest"/>
+    </bindings>
+    <bindings scd="tns:getPokemonResponse">
+      <class ref="com.pokemon.soap.generated.GetPokemonResponse"/>
+    </bindings>
+    <bindings scd="~tns:pokemon">
+      <class ref="com.pokemon.soap.generated.Pokemon"/>
+    </bindings>
+    <bindings scd="tns:getAllPokemonRequest">
+      <class ref="com.pokemon.soap.generated.GetAllPokemonRequest"/>
+    </bindings>
+    <bindings scd="tns:getAllPokemonResponse">
+      <class ref="com.pokemon.soap.generated.GetAllPokemonResponse"/>
+    </bindings>
+    <bindings scd="~tns:abilities">
+      <class ref="com.pokemon.soap.generated.Abilities"/>
+    </bindings>
+  </bindings>
+</bindings>
+

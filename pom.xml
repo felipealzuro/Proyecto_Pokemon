@@ -6,7 +6,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.5</version> <!-- Versión más reciente y estable -->
+        <version>3.4.4</version> <!-- Versión más reciente y estable -->
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     
@@ -72,6 +72,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+                    <mainClass>com.pokemon.pokemon_soap_service.PokemonSoapServiceApplication</mainClass>
+                </configuration>
             </plugin>
             
             <!-- JAXB2 Maven Plugin -->
