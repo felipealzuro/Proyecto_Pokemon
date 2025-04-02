@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
 // Visite https://eclipse-ee4j.github.io/jaxb-ri 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2025.03.24 a las 08:21:03 PM COT 
+// Generado el: 2025.04.02 a las 08:16:59 AM COT 
 //
 
 
@@ -37,83 +37,51 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetPokemonListRequest }
+     * Create an instance of {@link GetPokemonRequest }
      * 
      */
-    public GetPokemonListRequest createGetPokemonListRequest() {
-        return new GetPokemonListRequest();
+    public GetPokemonRequest createGetPokemonRequest() {
+        return new GetPokemonRequest();
     }
 
     /**
-     * Create an instance of {@link GetPokemonListResponse }
+     * Create an instance of {@link GetPokemonResponse }
      * 
      */
-    public GetPokemonListResponse createGetPokemonListResponse() {
-        return new GetPokemonListResponse();
+    public GetPokemonResponse createGetPokemonResponse() {
+        return new GetPokemonResponse();
     }
 
     /**
-     * Create an instance of {@link PokemonEntry }
+     * Create an instance of {@link Pokemon }
      * 
      */
-    public PokemonEntry createPokemonEntry() {
-        return new PokemonEntry();
+    public Pokemon createPokemon() {
+        return new Pokemon();
     }
 
     /**
-     * Create an instance of {@link GetPokemonDetailsRequest }
+     * Create an instance of {@link GetAllPokemonRequest }
      * 
      */
-    public GetPokemonDetailsRequest createGetPokemonDetailsRequest() {
-        return new GetPokemonDetailsRequest();
+    public GetAllPokemonRequest createGetAllPokemonRequest() {
+        return new GetAllPokemonRequest();
     }
 
     /**
-     * Create an instance of {@link GetPokemonDetailsResponse }
+     * Create an instance of {@link GetAllPokemonResponse }
      * 
      */
-    public GetPokemonDetailsResponse createGetPokemonDetailsResponse() {
-        return new GetPokemonDetailsResponse();
+    public GetAllPokemonResponse createGetAllPokemonResponse() {
+        return new GetAllPokemonResponse();
     }
 
     /**
-     * Create an instance of {@link TypeWrapper }
+     * Create an instance of {@link Abilities }
      * 
      */
-    public TypeWrapper createTypeWrapper() {
-        return new TypeWrapper();
-    }
-
-    /**
-     * Create an instance of {@link AbilityWrapper }
-     * 
-     */
-    public AbilityWrapper createAbilityWrapper() {
-        return new AbilityWrapper();
-    }
-
-    /**
-     * Create an instance of {@link Sprites }
-     * 
-     */
-    public Sprites createSprites() {
-        return new Sprites();
-    }
-
-    /**
-     * Create an instance of {@link Type }
-     * 
-     */
-    public Type createType() {
-        return new Type();
-    }
-
-    /**
-     * Create an instance of {@link Ability }
-     * 
-     */
-    public Ability createAbility() {
-        return new Ability();
+    public Abilities createAbilities() {
+        return new Abilities();
     }
 
 }

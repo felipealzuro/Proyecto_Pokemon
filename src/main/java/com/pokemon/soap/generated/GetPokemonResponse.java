@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
 // Visite https://eclipse-ee4j.github.io/jaxb-ri 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2025.03.24 a las 09:24:43 PM GMT-05:00 
+// Generado el: 2025.04.02 a las 08:16:59 AM COT 
 //
 
 
@@ -11,21 +11,21 @@ package com.pokemon.soap.generated;
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
 import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Clase Java para typeWrapper complex type.
+ * <p>Clase Java para anonymous complex type.
  * 
  * <p>El siguiente fragmento de esquema especifica el contenido que se espera que haya en esta clase.
  * 
  * <pre>
- * &lt;complexType name="typeWrapper"&gt;
+ * &lt;complexType&gt;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="slot" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
- *         &lt;element name="type" type="{http://pokemon.com/soap}type"/&gt;
+ *         &lt;element name="pokemon" type="{http://pokemon.com/soap/generated}pokemon"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -35,54 +35,37 @@ import jakarta.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "typeWrapper", propOrder = {
-    "slot",
-    "type"
+@XmlType(name = "", propOrder = {
+    "pokemon"
 })
-public class TypeWrapper {
+@XmlRootElement(name = "getPokemonResponse")
+public class GetPokemonResponse {
 
-    protected int slot;
     @XmlElement(required = true)
-    protected Type type;
+    protected Pokemon pokemon;
 
     /**
-     * Obtiene el valor de la propiedad slot.
-     * 
-     */
-    public int getSlot() {
-        return slot;
-    }
-
-    /**
-     * Define el valor de la propiedad slot.
-     * 
-     */
-    public void setSlot(int value) {
-        this.slot = value;
-    }
-
-    /**
-     * Obtiene el valor de la propiedad type.
+     * Obtiene el valor de la propiedad pokemon.
      * 
      * @return
      *     possible object is
-     *     {@link Type }
+     *     {@link Pokemon }
      *     
      */
-    public Type getType() {
-        return type;
+    public Pokemon getPokemon() {
+        return pokemon;
     }
 
     /**
-     * Define el valor de la propiedad type.
+     * Define el valor de la propiedad pokemon.
      * 
      * @param value
      *     allowed object is
-     *     {@link Type }
+     *     {@link Pokemon }
      *     
      */
-    public void setType(Type value) {
-        this.type = value;
+    public void setPokemon(Pokemon value) {
+        this.pokemon = value;
     }
 
 }

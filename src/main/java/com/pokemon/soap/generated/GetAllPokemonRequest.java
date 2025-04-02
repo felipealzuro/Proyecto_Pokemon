@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
 // Visite https://eclipse-ee4j.github.io/jaxb-ri 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2025.03.24 a las 09:24:43 PM GMT-05:00 
+// Generado el: 2025.04.02 a las 08:16:59 AM COT 
 //
 
 
@@ -10,7 +10,6 @@ package com.pokemon.soap.generated;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
-import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlType;
 
@@ -25,7 +24,6 @@ import jakarta.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="nameOrId" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -35,37 +33,9 @@ import jakarta.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "nameOrId"
-})
-@XmlRootElement(name = "getPokemonDetailsRequest")
-public class GetPokemonDetailsRequest {
+@XmlType(name = "")
+@XmlRootElement(name = "getAllPokemonRequest")
+public class GetAllPokemonRequest {
 
-    @XmlElement(required = true)
-    protected String nameOrId;
-
-    /**
-     * Obtiene el valor de la propiedad nameOrId.
-     * 
-     * @return
-     *     possible object is
-     *     {@link String }
-     *     
-     */
-    public String getNameOrId() {
-        return nameOrId;
-    }
-
-    /**
-     * Define el valor de la propiedad nameOrId.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link String }
-     *     
-     */
-    public void setNameOrId(String value) {
-        this.nameOrId = value;
-    }
 
 }
